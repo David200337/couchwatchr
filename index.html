@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Get all the information you need about the latest trending movies." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home - Couchwatchr</title>
+    <link rel="icon" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/logo.svg" alt="Couchwatchr Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image: url('./img/tenet_wallpaper.jpg')" data-interval="5000">
+            <div class="carousel-caption d-none d-md-block">
+              <article>
+                <h1>Tenet</h1>
+                <p>Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.</p>
+              </article>
+
+              <a href="./tenet.html">
+                <button class="default-light-button">See movie info</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('./img/the_kid_detective_wallpaper.jpg')" data-interval="5000">
+            <div class="carousel-caption d-none d-md-block">
+              <article>
+                <h1>The Kid Detective</h1>
+                <p>A once-celebrated kid detective, now 31, continues to solve the same trivial mysteries between hangovers and bouts of self-pity. Until a naive client brings him his first 'adult' case, to find out who brutally murdered her boyfriend.</p>
+              </article>
+
+              <a href="./the-kid-detective.html">
+                <button class="default-light-button">See movie info</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('./img/unhinged_wallpaper.jpg')" data-interval="5000">
+            <div class="carousel-caption d-none d-md-block">
+              <article>
+                <h1>Unhinged</h1>
+                <p>
+                  Rachel is a single mother whose bad day gets even worse when she beeps her horn at a fellow driver during rush-hour traffic. After an exchange of words, she soon realizes that the mysterious man is following her and her young son in his truck. The initial case of road rage quickly escalates into full-blown terror as Rachel discovers the psychopath's sinister plan for revenge.
+                </p>
+              </article>
+
+              <a href="./unhinged.html">
+                <button class="default-light-button">See movie info</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content">
+        <div class="container-fluid">
+          <div class="row px-5" id="movie-list">
+            <div class="col-12 mb-3">
+              <h2>MOVIES</h2>
+            </div>
+
+            <div class="col-12 mb-4">
+              <div class="form-inline search-area">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="searchInput" placeholder="Search here" />
+                </div>
+                <button type="submit" class="default-light-button" id="searchButton" onclick="searchMovies()">Search</button>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+              <div class="movie-card">
+                <a href="./honest-thief.html">
+                  <img src="./img/honest_thief_poster.jpg" alt="Honest Thief Poster" />
+                </a>
+
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="./honest-thief.html">
+                      <p><b>HONEST THIEF</b></p>
+                    </a>
+                  </div>
+
+                  <div class="card-description">
+                    <p>1 HR 40 MIN | PG13</p>
+                    <p>Released Oct 16, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+              <div class="movie-card">
+                <a href="./the-war-with-grandpa.html">
+                  <img src="./img/the_war_with_grandpa_poster.jpg" alt="The War With Grandpa Poster" />
+                </a>
+
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="./the-war-with-grandpa.html">
+                      <p><b>THE WAR WITH GRANDPA</b></p>
+                    </a>
+                  </div>
+
+                  <div class="card-description">
+                    <p>1 HR 34 MIN | PG</p>
+                    <p>Released Oct 9, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+              <div class="movie-card">
+                <a href="./two-hearts.html">
+                  <img src="./img/two_hearts_poster.jpg" alt="Two Hearts Poster" />
+                </a>
+
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="./two-hearts.html">
+                      <p><b>TWO HEARTS</b></p>
+                    </a>
+                  </div>
+
+                  <div class="card-description">
+                    <p>1 HR 41 MIN | PG13</p>
+                    <p>Released Oct 16, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+              <div class="movie-card">
+                <a href="./tenet.html">
+                  <img src="./img/tenet_poster.jpg" alt="Tenet Poster" />
+                </a>
+
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="./tenet.html">
+                      <p><b>TENET</b></p>
+                    </a>
+                  </div>
+
+                  <div class="card-description">
+                    <p>2 HR 30 MIN | PG13</p>
+                    <p>Released Sep 3, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+              <div class="movie-card">
+                <a href="./the-kid-detective.html">
+                  <img src="./img/the_kid_detective_poster.jpg" alt="The Kid Detective Poster" />
+                </a>
+
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="./the-kid-detective.html">
+                      <p><b>THE KID DETECTIVE</b></p>
+                    </a>
+                  </div>
+
+                  <div class="card-description">
+                    <p>1 HR 37 MIN | R</p>
+                    <p>Released Oct 16, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+              <div class="movie-card">
+                <a href="./unhinged.html">
+                  <img src="./img/unhinged_poster.jpg" alt="Unhinged Poster" />
+                </a>
+
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="./unhinged.html">
+                      <p><b>UNHINGED</b></p>
+                    </a>
+                  </div>
+
+                  <div class="card-description">
+                    <p>1 HR 30 MIN | R</p>
+                    <p>Released Aug 21, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+              <div class="movie-card">
+                <a href="./the-new-mutants.html">
+                  <img src="./img/the_new_mutants_poster.jpg" alt="The New Mutants Poster" />
+                </a>
+
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="./the-new-mutants.html">
+                      <p><b>THE NEW MUTANTS</b></p>
+                    </a>
+                  </div>
+
+                  <div class="card-description">
+                    <p>1 HR 39 MIN | PG13</p>
+                    <p>Released Aug 28, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+              <div class="movie-card">
+                <a href="./infidel.html">
+                  <img src="./img/infidel_poster.jpg" alt="Infidel Poster" />
+                </a>
+
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="./infidel.html">
+                      <p><b>INFIDEL</b></p>
+                    </a>
+                  </div>
+
+                  <div class="card-description">
+                    <p>1 HR 47 MIN | R</p>
+                    <p>Released Sep 18, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+              <div class="movie-card">
+                <a href="./memories-of-murder.html">
+                  <img src="./img/memories_of_murder_poster.jpg" alt="Memories Of Murder Poster" />
+                </a>
+
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="./memories-of-murder.html">
+                      <p><b>MEMORIES OF MURDER</b></p>
+                    </a>
+                  </div>
+
+                  <div class="card-description">
+                    <p>2 HR 40 MIN | NR</p>
+                    <p>Released Oct 19, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+              <div class="movie-card">
+                <a href="./the-broken-hearts-gallery.html">
+                  <img src="./img/the_broken_hearts_gallery_poster.jpg" alt="The Broken Hearts Gallery Poster" />
+                </a>
+
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="./the-broken-hearts-gallery.html">
+                      <p><b>THE BROKEN HEARTS GALLERY</b></p>
+                    </a>
+                  </div>
+
+                  <div class="card-description">
+                    <p>1 HR 48 MIN | PG13</p>
+                    <p>Released Sep 11, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 add-movie-section">
+              <p><b>Didn't find what you where looking for?</b></p>
+              <a href="./add-movie.html">
+                <button class="default-dark-button">Add a movie</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row px-5 py-4">
+          <div class="col-auto mb-md-0 mb-2">
+            <img src="./img/logo.svg" alt="Couchwatchr Logo" />
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="footer-menu">
+                <div class="col-md-12 col-6">
+                  <a href="./about.html"><p>About</p></a>
+                </div>
+                <div class="col-md-12 col-6 mr-auto">
+                  <a href=".contact.html"><p>Contact</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <hr />
+            <p>Copyright © 2020 Couchwatchr, All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
